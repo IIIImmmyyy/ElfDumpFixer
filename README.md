@@ -12,7 +12,7 @@
 ### 以frida为例子自行注入所在进程
 ```javascript
 let module = Module.load("/data/data/com.bilibili.warmsnow/ElfDumpAndFix.so");
-let nativePointer = module.findExportByName("_Z6DumpSoPKcS0_");//获取导出函数地址
+let nativePointer = module.findExportByName("_Z6DumpSoPKcS0_");//获取导出函数地址 (soname, dumpPath)  参数为需要Dump的so名字和dump路径
 let dumpFun = new NativeFunction(nativePointer,"void",['pointer','pointer']);
 dumpFun(Memory.allocUtf8String("libil2cpp.so"),Memory.allocUtf8String("/data/data/com.bilibili.warmsnow/dump_libil2cpp.so"));
 ```
