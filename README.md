@@ -8,6 +8,8 @@
 # ElfDumpFixer
 ## 介绍
 ### 基于Android12 linker的脱壳机。 用于一键Dump需要的So。可用于被 libtprt加固后的so脱壳。只有部分SectionTable未修复。关键信息全部修复 （**该项目源码在课程中提供**）
+# 系统支持 
+### Android12-14
 ## 使用
 ### 注意：请保证在需要DumpSo的加载之前就已经完成注入调用，否则信息将有错误;
 ### 以frida为例子自行注入所在进程
