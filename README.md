@@ -29,4 +29,4 @@ dumpFun(Memory.allocUtf8String("libil2cpp.so"),Memory.allocUtf8String("/data/dat
 - 游戏：暖雪
 - 加固厂商：libtprt
 
-### 注意！！！ 非Android12系统 linker结构体变化有可能无法正常工作，该项并未测试！
+### 注意！！！ 非Android12系统没有严谨的测试过， 请自行结合实际情况。理论支持12-14。
