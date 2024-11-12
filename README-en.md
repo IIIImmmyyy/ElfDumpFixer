@@ -1,6 +1,8 @@
 ﻿# ElfDumpFixer
 ## Introduction
 ### ElfDumpFixer is a shell tool based on the Android 12 linker, designed for streamlined dumping of required .so files. It is particularly useful for unpacking .so files that have been protected by libtprt. While certain sections of the Section Table remain unmodified, all critical information is restored.
+## support
+### Android12-14
 ## Usage
 ### Example: Injecting with Frida
 ```javascript
